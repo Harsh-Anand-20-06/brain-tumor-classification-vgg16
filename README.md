@@ -56,15 +56,23 @@ ResNet50 was further fine-tuned using:
 
 ##  Model Performance
 
-### Validation Results
+### Final Fine-tuned ResNet50 Test Results
 
-| Architecture | Validation Accuracy | Validation Loss |
-|---|---:|---:|
-| VGG16 | 90.89% | 0.2907 |
-| ResNet50 | 93.21% | 0.1971 |
-| DenseNet121 | 90.08%  |  0.2956 |
+| Metric | Score |
+|---|---:|
+| Test Accuracy | 92.69% |
+| Test Loss | 0.5367 |
+| Macro F1-score | 92.47% |
+| Weighted F1-score | 92.47% |
 
-*Note: These are validation results, not final test results.*
+### Classification Report
+
+| Class | Precision | Recall | F1-score |
+|---|---:|---:|---:|
+| Glioma | 97.77% | 76.75% | 85.99% |
+| Meningioma | 86.87% | 94.25% | 90.41% |
+| No Tumor | 91.53% | 100.00% | 95.58% |
+| Pituitary | 96.14% | 99.75% | 97.91% |
 
 ### Results and Visualizations
 
